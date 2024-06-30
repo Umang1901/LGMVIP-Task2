@@ -1,0 +1,246 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4e3e3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding-bottom: 20px;
+    background: #f9f6f6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #28a745;
+    box-shadow: 0 2px 10px rgba(0, 0, 1, 0.5);
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    
+    border-radius: 8px;
+    margin: 20px;
+    border-right: 5px solid #80ff00;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form label {
+    width: 30%;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="url"],
+form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 70%;
+}
+
+.gender-options, .skills-options {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-options label, .skills-options label {
+    width: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.enroll-btn {
+    background-color: #2134e4;
+    color: #fff;
+}
+
+.clear-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.enrolled-students {
+    width: 40%;
+    padding: 20px;
+    border-left: 5px solid #80ff00;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.enrolled-students h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 3px solid #78b53c;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #78b53c;
+    color: white;
+}
+
+/* Remove border for middle th and td */
+tbody td:nth-child(1){
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 30%;
+}
+tbody td:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 30%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dbf8bd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8f8de;
+}
+
+
+td img {
+    width: 175px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    form, .enrolled-students {
+        width: 85%;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="url"],
+    form input[type="file"] {
+        width: 100%;
+    }
+
+    .gender-options, .skills-options {
+        flex-direction: column;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="url"],
+    form input[type="file"] {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .enrolled-students{
+        width: 85%;
+    }
+    .enrolled-students h3 {
+        font-size: 18px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    td img {
+        td img {
+            max-width: 600px;
+        }
+    }
+}
